@@ -8,7 +8,8 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
   margin: 0; }
@@ -3953,19 +3954,21 @@ tbody.collapse.in {
     .navbar-right ~ .navbar-right {
       margin-right: 0; } }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7; }
+  background-color: #161230;
+  border-color:none;
+}
   .navbar-default .navbar-brand {
-    color: #777; }
+    color:white;
+  }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e;
+      color:;
       background-color: transparent; }
   .navbar-default .navbar-text {
-    color: #777; }
+    color:white; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: white; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #333;
+      color: #6056a5;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
@@ -5808,3 +5811,12 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=app.css.map */
+
+body {
+  background-color:#161230;
+}
+
+#backgroundImage {
+  width:1100px;
+  margin-top:20px;
+}
