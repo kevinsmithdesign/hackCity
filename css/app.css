@@ -2437,7 +2437,7 @@ output {
   font-size: 14px;
   line-height: 1.42857;
   color: #555555; }
-
+/* border radius for the home page is in here */
 .form-control {
   display: block;
   width: 100%;
@@ -2448,8 +2448,8 @@ output {
   color: #555555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border:none;
+  border-radius: 30px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -2527,7 +2527,8 @@ input[type="search"] {
   input[type="month"] {
     line-height: 46px; } }
 .form-group {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .radio,
 .checkbox {
@@ -2628,7 +2629,7 @@ select[multiple].input-sm,
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 10px; }
 .form-group-sm select.form-control {
   height: 30px;
   line-height: 30px; }
@@ -2881,10 +2882,10 @@ select[multiple].input-lg,
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 7px 18px;
   font-size: 14px;
   line-height: 1.42857;
-  border-radius: 4px;
+  border-radius: 30px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2893,13 +2894,13 @@ select[multiple].input-lg,
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   .btn:hover, .btn:focus, .btn.focus {
-    color: #333;
+    color:none;
     text-decoration: none; }
   .btn:active, .btn.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
     opacity: 0.65;
@@ -2911,33 +2912,40 @@ a.btn.disabled, fieldset[disabled] a.btn {
   pointer-events: none; }
 
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc; }
+  color:white;
+  background-color: #6056a5;
+  border-color: none;
+}
   .btn-default:focus, .btn-default.focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c; }
+    color: white;
+    background-color: #6056a5;
+    border-color:none; }
   .btn-default:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad; }
+    color:white;
+    background-color:transparent;
+    border-color:white;
+  }
+
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad; }
+    color:white;
+    background-color: #6056a5;
+    border-color: none; }
     .btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-      color: #333;
-      background-color: #d4d4d4;
-      border-color: #8c8c8c; }
+      color:white;
+      background-color:#6056a5;
+      border-color:none;
+    }
   .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-    background-image: none; }
+    background-image: none;
+    background-color: #6056a5;
+    border-color:white;
+  }
   .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus {
-    background-color: #fff;
-    border-color: #ccc; }
+    background-color: #6056a5;
+    border-color:white; }
   .btn-default .badge {
-    color: #fff;
-    background-color: #333; }
+    color:white;
+    background-color: #6056a5; }
 
 .btn-primary {
   color: #fff;
@@ -5812,11 +5820,36 @@ button.close {
 
 /*# sourceMappingURL=app.css.map */
 
+/** Home Page **/
+
 body {
   background-color:#161230;
 }
 
 #backgroundImage {
-  width:1100px;
-  margin-top:20px;
+  /* width:1100px;
+  margin-top:20px; */
 }
+
+.welcome {
+  color:white;
+}
+
+#homePageForm {
+  width:200px;
+}
+
+#homePageButton {
+  margin-left:295px;
+  margin-top:-85px;
+}
+
+
+
+
+
+.groupButtonForm {
+  margin-right:90px;
+}
+
+/** Home Page Code Ends **/
