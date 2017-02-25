@@ -16,7 +16,9 @@ html {
 }
 
 body {
-  margin: 0; }
+  margin: 0;
+  color:white !important;
+}
 
 article,
 aside,
@@ -230,7 +232,8 @@ th {
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
@@ -2405,7 +2408,7 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold; }
+  font-weight: regular; }
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -5081,7 +5084,8 @@ button.close {
   -webkit-appearance: none; }
 
 .modal-open {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .modal {
   display: none;
@@ -5120,9 +5124,10 @@ button.close {
 
 .modal-content {
   position: relative;
-  background-color: #fff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color:white;
+  background-color:#161230;
+  /* border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2); */
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -5158,11 +5163,14 @@ button.close {
 
 .modal-title {
   margin: 0;
-  line-height: 1.42857; }
+  line-height: 1.42857;
+}
 
 .modal-body {
   position: relative;
-  padding: 15px; }
+  padding: 15px;
+  background-color:#161230;
+}
 
 .modal-footer {
   padding: 15px;
@@ -5840,10 +5848,11 @@ body {
 }
 
 #backgroundImage {
-  width:1200px;
-  margin-top:-220px;
-  position:relative;
-  z-index:-99;
+  width:1000px;
+  margin-top:;
+  /* position:relative;
+  z-index:-99; */
+
 }
 
 .logo {
