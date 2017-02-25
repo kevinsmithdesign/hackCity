@@ -1,0 +1,33 @@
+{
+  "name": "hackcity",
+  "version": "1.0.0",
+  "description": "Coder social media and evets app helping to connect coders to each other",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkevinsmithdesign/hackCity.git"
+  },
+  "keywords": [
+    "coder",
+    "connection",
+    "social",
+    "media"
+  ],
+  "author": "Grace Vallavanatt, Kevin Smith, Syed Khurshid, Ian Shirley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrkevinsmithdesign/hackCity/issues"
+  },
+  "homepage": "https://github.com/mrkevinsmithdesign/hackCity#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0",
+    "sequelize-cli": "^2.5.1"
+  }
+}
