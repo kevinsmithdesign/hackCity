@@ -5840,8 +5840,14 @@ body {
 }
 
 #backgroundImage {
-  width:960px;
-  margin-top:-50px;
+  width:1200px;
+  margin-top:-220px;
+  position:relative;
+  z-index:-99;
+}
+
+.logo {
+  width:250px;
 }
 
 .welcome {
@@ -5867,9 +5873,6 @@ body {
   margin-right:90px;
 }
 
-.navText {
-  font-family: 'Open Sans', sans-serif;
-  font-size:16px;
-}
+
 
 /** Home Page Code Ends **/
