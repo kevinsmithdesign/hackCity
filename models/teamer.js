@@ -34,14 +34,13 @@ var Teams = sequelize.define("project", {
 }, {
   classMethods: {
     associate: function (models) {
-      Teams.(User, {
-        through: 'user_team',
-        foreignKey: 'project_id'
+      Teams.hasOne(Event, {
+        as: "Event",
+        foreignKey: "event_id"
       });
-      Projects.hasMany(models.User, {
+      Teams.hasMany(User, {
         foreignKey: {
-          name: 'user_id',
-          allowNull: false
+          as: "members"
         }
       });
     }
