@@ -8,44 +8,46 @@ var sequelize = require("../config/config.js");
 
 // Creates a "event" model that matches up with DB
 var Teams = sequelize.define("project", {
-  team_id: {
-    type: Sequelize.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  },
-  creator: {
-    type: Sequelize.BOOLEAN
-  },
-  project_name: {
-    type: Sequelize.STRING
-  },
-  team_name: {
-    type: Sequelize.STRING
-  },
-  users: {
-    type: Sequelize.STRING
-  },
-  p_description: {
-    type: Sequelize.TEXT
-  },
-  roles: {
-    type: Sequelize.STRING
-  }
-}, {
-  classMethods: {
-    associate: function (models) {
-      Teams.hasOne(Event, {
-        as: "Event",
-        foreignKey: "event_id"
-      });
-      Teams.hasMany(User, {
-        foreignKey: {
-          as: "members"
-        }
-      });
+    team_id: {
+        type: Sequelize.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+    },
+    creator: {
+        type: Sequelize.INTEGER
+    },
+    project_name: {
+        type: Sequelize.STRING
+    },
+    team_name: {
+        type: Sequelize.STRING
+    },
+    users: {
+        type: Sequelize.STRING
+    },
+    p_description: {
+        type: Sequelize.TEXT
+    },
+    roles: {
+        type: Sequelize.STRING
+    },
+    event_id: {
+        type: Sequelize.INTEGER
     }
-  },
-  timestamps: false
+}, {
+    classMethods: {
+        associate: function (models) {
+            Teams.belongsTo(Event, {
+                as: "Event",
+                foreignKey: "event_id"
+            });
+            Teams.belongsToMany(User, {
+                through: userTeams
+            });
+        },
+    },
+}, {
+    timestamps: false
 });
 console.log(Projects);
 // Syncs with DB
